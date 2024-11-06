@@ -1,0 +1,13 @@
+spring:
+  application.name: secret-santa
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/secret_santa}
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+
+telegram:
+  token: ${TELEGRAM_TOKEN}
